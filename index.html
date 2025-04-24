@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Wyncess Website - Health Community</title>
+<style>
+  /* Reset some default styles */
+  body, h1, p, table {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f9fcfb;
+    color: #1a1a2e; /* Dark blue-ish */
+    line-height: 1.6;
+    padding: 20px;
+  }
+  header {
+    background-color: #003366; /* Deep navy blue */
+    color: #ffd700; /* Gold */
+    padding: 25px 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(255, 215, 0, 0.3);
+    text-align: center;
+  }
+  header a {
+    text-decoration: none;
+    color: inherit;
+  }
+  header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 5px;
+    letter-spacing: 2px;
+    font-weight: 900;
+  }
+  header .tagline {
+    font-size: 1.2rem;
+    font-weight: 600;
+    opacity: 0.85;
+    font-style: italic;
+  }
+
+  section.cookie-gallery {
+    overflow-x: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    background-color: white;
+    padding: 15px;
+  }
+  table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    font-weight: 600;
+    color: #1a1a2e;
+  }
+  thead tr {
+    background-color: #003366; /* Deep navy blue */
+    color: #ffd700; /* Gold */
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  thead th {
+    padding: 15px 10px;
+  }
+  tbody tr {
+    background-color: #e6f0ff; /* Light blue */
+    transition: background-color 0.3s ease;
+    border-radius: 6px;
+  }
+  tbody tr:hover {
+    background-color: #cce0ff; /* Slightly darker blue on hover */
+  }
+  tbody td {
+    padding: 12px 10px;
+    color: #1a1a2e;
+  }
+  tbody td a {
+    color: #003366; /* Deep navy blue */
+    font-weight: 700;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  tbody td a:hover {
+    color: #b8860b; /* Dark goldenrod */
+    text-decoration: underline;
+  }
+
+  footer {
+    margin-top: 40px;
+    text-align: center;
+    font-style: italic;
+    color: #555a6e; /* Muted blue-gray */
+    font-weight: 600;
+  }
+  footer p {
+    margin: 5px 0;
+  }
+
+  /* Responsive tweaks */
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 2rem;
+    }
+    header .tagline {
+      font-size: 1rem;
+    }
+    tbody td {
+      font-size: 0.9rem;
+      padding: 10px 5px;
+    }
+    thead th {
+      font-size: 0.9rem;
+      padding: 10px 5px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+    <a href="index.html" style="text-decoration:none; color:inherit;">
+        <h1>Highway Hills</h1>
+        <p class="tagline">Health center</p>
+    </a>
+</header>
+
+<section class="cookie-gallery">
+    <table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse; text-align: center;">
+        <thead>
+            <tr>
+                <th>Patient ID</th>
+                <th>Surname</th>
+                <th>First Name</th>
+                <th>Middle Name</th>
+                <th>Gender</th>
+                <th>Birthdate</th>
+                <th>Risk Assessment</th>
+                <th>Profile Link</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>12312141212314</td>
+                <td>DELA CRUZ</td>
+                <td>JUAN</td>
+                <td>SERNA</td>
+                <td>MALE</td>
+                <td>1995-09-30</td>
+                <td>DONE</td>
+                <td><a href="patient1.html">View Profile</a></td>
+            </tr>
+            <tr>
+                <td>123123124123</td>
+                <td>SOLIMAN</td>
+                <td>GILIANNE RICCI</td>
+                <td>CASTAÑOS</td>
+                <td>FEMALE</td>
+                <td>2005-04-21</td>
+                <td>DONE</td>
+                <td><a href="patient2.html">View Profile</a></td>
+            </tr>
+            <tr>
+                <td>1231231241312</td>
+                <td>SANTIAGO</td>
+                <td>WYNCESS LOREIN</td>
+                <td>SANTOS</td>
+                <td>FEMALE</td>
+                <td>2004-01-23</td>
+                <td>DONE</td>
+                <td><a href="patient3.html">View Profile</a></td>
+            </tr>
+            <tr>
+                <td>1231241231412</td>
+                <td>SANTOS</td>
+                <td>HANNAH SAMANTHA</td>
+                <td>LEGAMIA</td>
+                <td>FEMALE</td>
+                <td>2004-06-25</td>
+                <td>DONE</td>
+                <td><a href="patient4.html">View Profile</a></td>
+            </tr>
+            <tr>
+                <td>123124124123</td>
+                <td>RELAYSON</td>
+                <td>NICOLE</td>
+                <td>MALUPITON</td>
+                <td>FEMALE</td>
+                <td>1999-07-24</td>
+                <td>DONE</td>
+                <td><a href="patient5.html">View Profile</a></td>
+            </tr>
+            <tr>
+                <td>123124124123</td>
+                <td>MARASIGAN</td>
+                <td>JOANNA</td>
+                <td>TEODORO</td>
+                <td>FEMALE</td>
+                <td>1999-10-10</td>
+                <td>DONE</td>
+                <td><a href="patient6.html">View Profile</a></td>
+            </tr>
+            <tr>
+                <td>123124124123</td>
+                <td>SUAREZ</td>
+                <td>CASSANDRA</td>
+                <td>SANTOS</td>
+                <td>FEMALE</td>
+                <td>2003-09-29</td>
+                <td>DONE</td>
+                <td><a href="patient7.html">View Profile</a></td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<footer style="margin-top: 20px; text-align: center; font-style: italic;">
+    <p>Thank you to our health center</p>
+    <p>A place where we get care, feel better, and stay healthy.</p>
+</footer>
+
+</body>
+</html>

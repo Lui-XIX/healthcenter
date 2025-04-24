@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Patient Health Record</title>
+  <style>
+    /* Reset and base */
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f5f9f8;
+      color: #1a1a2e; /* Dark navy blue */
+      margin: 0;
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      margin-bottom: 30px;
+      color: #003366; /* Deep navy blue */
+      text-align: center;
+      max-width: 800px;
+      line-height: 1.3;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      text-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+
+    table {
+      width: 100%;
+      max-width: 900px;
+      border-collapse: separate;
+      border-spacing: 0 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    thead tr {
+      background-color: #003366; /* Deep navy blue */
+      color: #ffd700; /* Gold */
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 1px;
+      font-size: 0.9rem;
+    }
+
+    thead th {
+      padding: 16px 20px;
+      text-align: left;
+    }
+
+    tbody tr {
+      background: #e6f0ff; /* Light blue */
+      transition: background-color 0.3s ease;
+      cursor: default;
+      border-radius: 8px;
+      box-shadow: inset 0 0 5px rgba(0,0,0,0.03);
+    }
+
+    tbody tr:hover {
+      background-color: #cce0ff; /* Slightly darker blue on hover */
+    }
+
+    tbody td {
+      padding: 16px 20px;
+      font-weight: 600;
+      font-size: 1rem;
+      vertical-align: middle;
+      border: none;
+      color: #1a1a2e; /* Dark navy */
+      white-space: pre-wrap; /* maintain line breaks */
+    }
+
+    /* Button styles */
+    .return-button {
+      background-color: #003366; /* Deep navy blue */
+      color: #ffd700; /* Gold */
+      border: none;
+      padding: 14px 28px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      border-radius: 30px;
+      cursor: pointer;
+      box-shadow: 0 6px 12px rgba(255, 215, 0, 0.4);
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+      margin-top: 30px;
+      user-select: none;
+      max-width: 900px;
+      width: 100%;
+      max-width: 300px;
+    }
+
+    .return-button:hover {
+      background-color: #002244; /* Darker navy */
+      box-shadow: 0 8px 16px rgba(204, 169, 0, 0.6);
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+      }
+      thead th, tbody td {
+        padding: 12px 10px;
+        font-size: 0.9rem;
+      }
+      .return-button {
+        font-size: 1rem;
+        padding: 12px 20px;
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>PATIENT'S NAME: DELA CRUZ, JUAN SERNA</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th>DATE OF VISIT</th>
+        <th>HEALTH RECORD</th>
+        <th>WEIGHT & HEIGHT</th>
+        <th>AGENDA</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>April 24, 2025</td>
+        <td>BP: L - 130/90<br>R: 140/100</td>
+        <td>85.5kg &amp; 170.18cm</td>
+        <td>Maintenance Medicine</td>
+      </tr>
+      <tr>
+        <td>May 01, 2025</td>
+        <td>BP: 120/80</td>
+        <td>80kg &amp; 170.18cm</td>
+        <td>Check-up</td>
+      </tr>
+      <tr>
+        <td>May 17, 2025</td>
+        <td>BP: 120/80</td>
+        <td>80kg &amp; 170.18cm</td>
+        <td>Vaccine</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <button class="return-button" onclick="goToMainPage()">Return to Main Page</button>
+
+  <script>
+    function goToMainPage() {
+      setTimeout(() => {
+        window.history.back();
+      }, 1);
+    }
+  </script>
+
+</body>
+</html>
